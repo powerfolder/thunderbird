@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
-  <title></title>
-  <script src="management.js" type="application/javascript" defer=""></script>
-  <style type="text/css">
+    <meta charset="utf-8"/>
+    <title></title>
+    <script src="management.js" type="application/javascript" defer=""></script>
+    <style type="text/css">
     :root {
       font: message-box;
       color: #0c0c0d;
@@ -37,25 +37,34 @@
   </style>
 </head>
 <body>
-  <form>
+<form>
+    <img src="logo48.png" alt="PowerFolder Logo">
     <h1 data-message="serviceName"></h1>
+
     <ul>
-      <li>
-        <label>
-          <h2 data-message="privateURLHeader"></h2>
-          <p data-message="privateURLDescription"></p>
-          <input type="url" name="private_url" required="true" placeholder="https://dav.example.com/" />
-        </label>
-      </li>
-      <li>
-        <label>
-          <h2 data-message="publicURLHeader"></h2>
-          <p data-message="publicURLDescription"></p>
-          <input type="url" name="public_url" placeholder="https://www.example.com/" />
-        </label>
-      </li>
+        <li>
+            <label>
+                <h2 data-message="privateURLHeader"></h2>
+                <p data-message="privateURLDescription"></p>
+                <input type="url" name="private_url" required="true" placeholder="https://dav.example.com/" />
+            </label>
+        </li>
+        <li>
+            <label>
+                <h2 data-message="usernameHeader"></h2>
+                <p data-message="usernameDescription"></p>
+                <input type="text" name="username" placeholder="MaxMustermann" />
+            </label>
+        </li>
+        <li>
+            <label>
+                <h2 data-message="passwordHeader"></h2>
+                <p data-message="passwordDescription"></p>
+                <input type="password" name="password" placeholder="******" />
+            </label>
+        </li>
     </ul>
     <div style="text-align: right"><button type="button">Save</button></div>
-  </form>
+</form>
 </body>
 </html>

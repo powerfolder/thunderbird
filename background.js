@@ -28,9 +28,11 @@ browser.cloudFile.onFileUpload.addListener(async (account, { id, name, data }) =
     signal: uploadInfo.abortController.signal,
   };
   let response = await fetch(url, fetchInfo);
+    console.log('Response =' + response + 'response.status =' + response.status);
+  if (response.status == 401 || response.status == 502) {
 
-  if (response.status == 401) {
-    headers.Authorization = await browser.authRequest.getAuthHeader(
+    headers.Authorization = await browser.
+   .getAuthHeader(
       url, response.headers.get("WWW-Authenticate"), "PUT"
     );
     response = await fetch(url, fetchInfo);

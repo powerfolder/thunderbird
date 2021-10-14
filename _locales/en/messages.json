@@ -1,23 +1,29 @@
 {
   "extensionDescription": {
-    "message": "Uploads your large attachments to your WebDAV account instead of sending them by email"
+    "message": "Uploads your large attachments to your PowerFolder account instead of sending them by email"
   },
   "extensionName": {
-    "message": "FileLink provider for WebDAV"
+    "message": "PowerFolder Mail Attachment"
   },
   "privateURLDescription": {
-    "message": "Thunderbird will use this address to connect to your WebDAV server."
+    "message": "Thunderbird will use this address to Upload your Files to the Server."
   },
   "privateURLHeader": {
     "message": "Private URL:"
   },
-  "publicURLHeader": {
-    "message": "Public URL:"
+  "usernameHeader": {
+    "message": "Username:"
   },
-  "publicURLDescription": {
-    "message": "Thunderbird will use this address in your email messages for your contacts to view."
+  "usernameDescription": {
+    "message": "Thunderbird will use this Username to login into your PowerFolder-Account."
+  },
+  "passwordHeader": {
+    "message": "Password:"
+  },
+  "passwordDescription": {
+    "message": "Thunderbird will use this Password to login into your PowerFolder-Account."
   },
   "serviceName": {
-    "message": "WebDAV"
+    "message": "File Attachment"
   }
 }
