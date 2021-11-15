@@ -1,0 +1,29 @@
+{
+  "extensionDescription": {
+    "message": "Läd Anhänge über die PowerFolder cloud hoch und versendet diese als Links"
+  },
+  "extensionName": {
+    "message": "PowerFolder"
+  },
+  // "powerFolderURLDescription": {
+  //  "message": "Set to 'Mail Attachments' folder in your Powefolder account."
+  //  },
+  "powerFolderURLHeader": {
+    "message": "Server URL"
+  },
+  "serviceName": {
+    "message": "PowerFolder"
+  },
+  "idHeader": {
+    "message": "Nutzername"
+  },
+  "passHeader": {
+    "message": "Passwort oder Token"
+  },
+  "loginSuccess": {
+    "message": "Sie haben Ihren Account erfolgreich eingerichtet"
+  },
+  "loginFailed": {
+    "message": "Login fehlgeschlagen. Überprüfen Sie Ihre Login daten und Ihren Account."
+  }
+}
