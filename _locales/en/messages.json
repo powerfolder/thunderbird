@@ -1,29 +1,29 @@
 {
   "extensionDescription": {
-    "message": "Uploads your large attachments to your PowerFolder account instead of sending them by email"
+    "message": "Uploads your large attachments to your PowerFolder cloud instead of sending them by email"
   },
   "extensionName": {
-    "message": "PowerFolder Mail Attachment"
+    "message": "PowerFolder"
   },
-  "privateURLDescription": {
-    "message": "Thunderbird will use this address to Upload your Files to the Server."
-  },
-  "privateURLHeader": {
-    "message": "Private URL:"
-  },
-  "usernameHeader": {
-    "message": "Username:"
-  },
-  "usernameDescription": {
-    "message": "Thunderbird will use this Username to login into your PowerFolder-Account."
-  },
-  "passwordHeader": {
-    "message": "Password:"
-  },
-  "passwordDescription": {
-    "message": "Thunderbird will use this Password to login into your PowerFolder-Account."
+  // "powerFolderURLDescription": {
+  //  "message": "Set to 'Mail Attachments' folder in your Powefolder account."
+  //  },
+  "powerFolderURLHeader": {
+    "message": "Server URL"
   },
   "serviceName": {
-    "message": "File Attachment"
+    "message": "PowerFolder"
+  },
+  "idHeader": {
+    "message": "Username"
+  },
+  "passHeader": {
+    "message": "Password or Token"
+  },
+  "loginSuccess": {
+    "message": "You successfully linked your account"
+  },
+  "loginFailed": {
+    "message": "Failed to login. Please check your login data and account."
   }
 }

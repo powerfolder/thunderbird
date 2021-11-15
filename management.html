@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <title></title>
-    <script src="management.js" type="application/javascript" defer=""></script>
-    <style type="text/css">
+  <meta charset="utf-8"/>
+  <title></title>
+  <script src="management.js" type="application/javascript" defer=""></script>
+  <style type="text/css">
     :root {
       font: message-box;
       color: #0c0c0d;
     }
     body {
       font-size: 1.1em;
+      width: 400px;
     }
     ul {
       list-style: none;
@@ -34,37 +35,40 @@
       width: 100%;
       box-sizing: border-box;
     }
+    label {
+      width:100%;
+    }
+    img {
+      margin-bottom: 20px;
+    }
   </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<form>
-    <img src="logo48.png" alt="PowerFolder Logo">
-    <h1 data-message="serviceName"></h1>
-
+  <form>
+    <img src="images/logo48.png" alt="PF-Logo"/>
     <ul>
-        <li>
-            <label>
-                <h2 data-message="privateURLHeader"></h2>
-                <p data-message="privateURLDescription"></p>
-                <input type="url" name="private_url" required="true" placeholder="https://dav.example.com/" />
-            </label>
-        </li>
-        <li>
-            <label>
-                <h2 data-message="usernameHeader"></h2>
-                <p data-message="usernameDescription"></p>
-                <input type="text" name="username" placeholder="MaxMustermann" />
-            </label>
-        </li>
-        <li>
-            <label>
-                <h2 data-message="passwordHeader"></h2>
-                <p data-message="passwordDescription"></p>
-                <input type="password" name="password" placeholder="******" />
-            </label>
-        </li>
+      <li>
+        <label>
+          <h2 data-message="powerFolderURLHeader"></h2>
+          <input type="url" name="private_url" required="true" value="https://my.powerfolder.com/" />
+        </label>
+        <input type="url" name="public_url"   value="https://my.powerfolder.com/folderstable" hidden/>
+      </li>
+      <li>
+        <label>
+          <h2 data-message="idHeader" style="display: inline;"></h2><h2 style="color:red; display:inline">*</h2>
+          <input type="text" name="id" placeholder="Username" id="idd" value="" />
+        </label>
+        <label>
+          <h2 data-message="passHeader" style="display: inline;"></h2><h2 style="color:red; display: inline;">*</h2>
+          <input type="password" name="pass" placeholder="Password"  />
+        </label>
+      </li>
+	<p style= "display:none; color:green" name="confirm" data-message="loginSuccess">Ok</p>
+	<p style= "display:none; color:red" name="wrong" data-message="loginFailed">Failed</p>
     </ul>
-    <div style="text-align: right"><button type="button">Save</button></div>
-</form>
+    <div style="text-align: right"><button type="button" class="btn btn-primary">Save</button></div>
+  </form>
 </body>
 </html>

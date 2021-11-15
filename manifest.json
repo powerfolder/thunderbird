@@ -1,25 +1,24 @@
 {
-  "name": "PowerFolder",
-  "description": "PowerFolder FileUpload",
-  "version": "1",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "16.6.100",
   "applications": {
     "gecko": {
-      "id": "kluch@powerfolder.com",
-      "strict_min_version": "60.0",
+      "id": "info@powerfolder.com",
+      "strict_min_version": "68.2.1",
       "strict_max_version": "91.*"
     }
   },
-  "icons": {
-    "48": "icon48.png"
-  },
-
   "background": {
     "scripts": [
       "background.js"
     ]
   },
+  "icons": {
+    "48": "images/icon48.png"
+  },
   "cloud_file": {
-    "name": "PowerFolder",
+    "name": "__MSG_serviceName__",
     "data_format": "File",
     "management_url": "management.html"
   },
