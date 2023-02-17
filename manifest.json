@@ -1,12 +1,11 @@
 {
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "16.6.100",
+  "version": "18.3.100",
   "applications": {
     "gecko": {
       "id": "info@powerfolder.com",
-      "strict_min_version": "68.2.1",
-      "strict_max_version": "91.*"
+      "strict_min_version": "68.2.1"
     }
   },
   "background": {
